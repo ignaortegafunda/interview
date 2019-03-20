@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+         <!-- XML Schema Generated from XML Document on Mon Mar 18 2019 22:33:41 GMT+0100 (hora estándar de Europa central) -->
+         <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+         <xs:element name="LocatieFeed">
+               <xs:complexType>
+                     <xs:sequence>
+                           <xs:element name="AccountStatus" type="xs:string"></xs:element>
+                           <xs:element name="EmailNotConfirmed" type="xs:string"></xs:element>
+                           <xs:element name="ValidationFailed" type="xs:string"></xs:element>
+                           <xs:element name="ValidationReport">
+                                 <xs:complexType>
+                                       <xs:attribute name="xmlns:a" type="xs:string"></xs:attribute>
+                                       <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                 </xs:complexType>
+                           </xs:element>
+                           <xs:element name="Website" type="xs:string"></xs:element>
+                           <xs:element name="Metadata">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="ObjectType" type="xs:string"></xs:element>
+                                             <xs:element name="Omschrijving" type="xs:string"></xs:element>
+                                             <xs:element name="Titel" type="xs:string"></xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+                           <xs:element name="Objects">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="Object" maxOccurs="unbounded">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="AangebodenSindsTekst" type="xs:string"></xs:element>
+                                                               <xs:element name="AanmeldDatum" type="xs:dateTime"></xs:element>
+                                                               <xs:element name="AantalBeschikbaar">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="AantalKamers" type="xs:int"></xs:element>
+                                                               <xs:element name="AantalKavels">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="Aanvaarding" type="xs:string"></xs:element>
+                                                               <xs:element name="Adres" type="xs:string"></xs:element>
+                                                               <xs:element name="Afstand" type="xs:int"></xs:element>
+                                                               <xs:element name="BronCode" type="xs:string"></xs:element>
+                                                               <xs:element name="ChildrenObjects"></xs:element>
+                                                               <xs:element name="DatumAanvaarding">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="DatumOndertekeningAkte">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="Foto" type="xs:string"></xs:element>
+                                                               <xs:element name="FotoLarge" type="xs:string"></xs:element>
+                                                               <xs:element name="FotoLargest" type="xs:string"></xs:element>
+                                                               <xs:element name="FotoMedium" type="xs:string"></xs:element>
+                                                               <xs:element name="FotoSecure" type="xs:string"></xs:element>
+                                                               <xs:element name="GewijzigdDatum">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="GlobalId" type="xs:int"></xs:element>
+                                                               <xs:element name="GroupByObjectType" type="xs:string"></xs:element>
+                                                               <xs:element name="Heeft360GradenFoto" type="xs:string"></xs:element>
+                                                               <xs:element name="HeeftBrochure" type="xs:string"></xs:element>
+                                                               <xs:element name="HeeftOpenhuizenTopper" type="xs:string"></xs:element>
+                                                               <xs:element name="HeeftOverbruggingsgrarantie" type="xs:string"></xs:element>
+                                                               <xs:element name="HeeftPlattegrond" type="xs:string"></xs:element>
+                                                               <xs:element name="HeeftTophuis" type="xs:string"></xs:element>
+                                                               <xs:element name="HeeftVeiling" type="xs:string"></xs:element>
+                                                               <xs:element name="HeeftVideo" type="xs:string"></xs:element>
+                                                               <xs:element name="HuurPrijsTot">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="Huurprijs">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="HuurprijsFormaat">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="Id" type="xs:string"></xs:element>
+                                                               <xs:element name="InUnitsVanaf">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="IndProjectObjectType" type="xs:string"></xs:element>
+                                                               <xs:element name="IndTransactieMakelaarTonen">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="IsSearchable" type="xs:string"></xs:element>
+                                                               <xs:element name="IsVerhuurd" type="xs:string"></xs:element>
+                                                               <xs:element name="IsVerkocht" type="xs:string"></xs:element>
+                                                               <xs:element name="IsVerkochtOfVerhuurd" type="xs:string"></xs:element>
+                                                               <xs:element name="Koopprijs" type="xs:int"></xs:element>
+                                                               <xs:element name="KoopprijsFormaat" type="xs:string"></xs:element>
+                                                               <xs:element name="KoopprijsTot" type="xs:int"></xs:element>
+                                                               <xs:element name="MakelaarId" type="xs:int"></xs:element>
+                                                               <xs:element name="MakelaarNaam" type="xs:string"></xs:element>
+                                                               <xs:element name="MobileURL" type="xs:string"></xs:element>
+                                                               <xs:element name="Note">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="OpenHuis">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="xmlns:a" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="Oppervlakte" type="xs:int"></xs:element>
+                                                               <xs:element name="Perceeloppervlakte" type="xs:int"></xs:element>
+                                                               <xs:element name="Postcode" type="xs:string"></xs:element>
+                                                               <xs:element name="Prijs">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="GeenExtraKosten" type="xs:string"></xs:element>
+                                                                                 <xs:element name="HuurAbbreviation"></xs:element>
+                                                                                 <xs:element name="Huurprijs">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="HuurprijsOpAanvraag"></xs:element>
+                                                                                 <xs:element name="HuurprijsTot">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="KoopAbbreviation" type="xs:string"></xs:element>
+                                                                                 <xs:element name="Koopprijs" type="xs:int"></xs:element>
+                                                                                 <xs:element name="KoopprijsOpAanvraag"></xs:element>
+                                                                                 <xs:element name="KoopprijsTot" type="xs:int"></xs:element>
+                                                                                 <xs:element name="OriginelePrijs">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="VeilingText"></xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="PrijsGeformatteerdHtml" type="xs:string"></xs:element>
+                                                               <xs:element name="PrijsGeformatteerdTextHuur" type="xs:string"></xs:element>
+                                                               <xs:element name="PrijsGeformatteerdTextKoop" type="xs:string"></xs:element>
+                                                               <xs:element name="Producten">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="a:string" maxOccurs="unbounded" type="xs:string"></xs:element>
+                                                                           </xs:sequence>
+                                                                           <xs:attribute name="xmlns:a" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="Project">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="AantalKamersTotEnMet">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="AantalKamersVan">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="AantalKavels">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="Adres">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="FriendlyUrl">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="GewijzigdDatum">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="GlobalId">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="HoofdFoto" type="xs:string"></xs:element>
+                                                                                 <xs:element name="IndIpix" type="xs:string"></xs:element>
+                                                                                 <xs:element name="IndPDF" type="xs:string"></xs:element>
+                                                                                 <xs:element name="IndPlattegrond" type="xs:string"></xs:element>
+                                                                                 <xs:element name="IndTop" type="xs:string"></xs:element>
+                                                                                 <xs:element name="IndVideo" type="xs:string"></xs:element>
+                                                                                 <xs:element name="InternalId" type="xs:string"></xs:element>
+                                                                                 <xs:element name="MaxWoonoppervlakte">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="MinWoonoppervlakte">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="Naam">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="Omschrijving">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="OpenHuizen"></xs:element>
+                                                                                 <xs:element name="Plaats">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="Prijs">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="PrijsGeformatteerd">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="PublicatieDatum">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="Type" type="xs:string"></xs:element>
+                                                                                 <xs:element name="Woningtypen">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="xmlns:a" type="xs:string"></xs:attribute>
+                                                                                             <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="ProjectNaam">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="PromoLabel">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="a:HasPromotionLabel" type="xs:string"></xs:element>
+                                                                                 <xs:element name="a:PromotionPhotos">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="xmlns:b" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="a:PromotionPhotosSecure">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="xmlns:b" type="xs:string"></xs:attribute>
+                                                                                             <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="a:PromotionType" type="xs:int"></xs:element>
+                                                                                 <xs:element name="a:RibbonColor" type="xs:int"></xs:element>
+                                                                                 <xs:element name="a:RibbonText">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="a:Tagline">
+                                                                                       <xs:complexType>
+                                                                                             <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                           <xs:attribute name="xmlns:a" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="PublicatieDatum" type="xs:dateTime"></xs:element>
+                                                               <xs:element name="PublicatieStatus" type="xs:string"></xs:element>
+                                                               <xs:element name="SavedDate">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="Soort-aanbod" type="xs:string"></xs:element>
+                                                               <xs:element name="SoortAanbod" type="xs:string"></xs:element>
+                                                               <xs:element name="StartOplevering">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="TimeAgoText">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="TransactieAfmeldDatum">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="TransactieMakelaarId">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="TransactieMakelaarNaam">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="TypeProject" type="xs:string"></xs:element>
+                                                               <xs:element name="URL" type="xs:string"></xs:element>
+                                                               <xs:element name="VerkoopStatus" type="xs:string"></xs:element>
+                                                               <xs:element name="WGS84_X" type="xs:double"></xs:element>
+                                                               <xs:element name="WGS84_Y" type="xs:double"></xs:element>
+                                                               <xs:element name="WoonOppervlakteTot" type="xs:int"></xs:element>
+                                                               <xs:element name="Woonoppervlakte" type="xs:int"></xs:element>
+                                                               <xs:element name="Woonplaats" type="xs:string"></xs:element>
+                                                               <xs:element name="ZoekType">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="a:SoortAanbod" type="xs:string"></xs:element>
+                                                                           </xs:sequence>
+                                                                           <xs:attribute name="xmlns:a" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+                           <xs:element name="Paging">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="AantalPaginas" type="xs:int"></xs:element>
+                                             <xs:element name="HuidigePagina" type="xs:int"></xs:element>
+                                             <xs:element name="VolgendeUrl" type="xs:string"></xs:element>
+                                             <xs:element name="VorigeUrl">
+                                                   <xs:complexType>
+                                                         <xs:attribute name="i:nil" type="xs:string"></xs:attribute>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+                           <xs:element name="TotaalAantalObjecten" type="xs:int"></xs:element>
+                     </xs:sequence>
+                     <xs:attribute name="xmlns" type="xs:string"></xs:attribute>
+                     <xs:attribute name="xmlns:i" type="xs:string"></xs:attribute>
+               </xs:complexType>
+         </xs:element>
+   </xs:schema>
+ 
